@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  color: aliceblue;
+  padding: 10px 30px;
+  overflow-x: scroll;
+}
+
+/* Hide navbar scroller start */
+
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  -ms-overfloe-style: none;
+  scrollbar-width: none;
+}
+
+/* hide navbar scroller end */
+
+.nav > h3 {
+  cursor: pointer;
+  margin: 0 40px;
+  opacity: 0.7;
+  font-weight: 400;
+  transition: transform 50ms ease-in-out;
+}
+
+.nav > h3:hover {
+  opacity: 1;
+  font-weight: 700;
+  transform: scale(1.2);
+}
+
+.active__nav {
+  opacity: 1 !important;
+  font-weight: 700 !important;
+}

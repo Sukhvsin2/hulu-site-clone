@@ -1,0 +1,12 @@
+.footer {
+  text-align: center;
+  padding: 100px !important;
+}
+
+.footer > p {
+  color: #fff;
+}
+
+.footer > p > a {
+  color: aquamarine;
+}
