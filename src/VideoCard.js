@@ -19,11 +19,11 @@ const VideoCard = forwardRef(({ movie }, ref) => {
         truncateText="..."
       />
       <h3>{movie.title || movie.original_name}</h3>
-      <p className="videoCard__stats">
+      <div className="videoCard__stats">
         <p className="videoCard__mediaType">{movie.media_type}</p>
         {movie.release_date || movie.first_air_date} <ThumbUpSharp />{" "}
         {movie.vote_count}
-      </p>
+      </div>
     </div>
   );
 });
